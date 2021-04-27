@@ -53,7 +53,7 @@ plot(average$Group.1,average$x, type = 'l', xlab = 'Interval', ylab = 'No. of St
      main = 'Average Steps per Interval', col = 'firebrick4')
 ```
 
-![](PA1_template_files/figure-html/time series plot-1.png)<!-- -->
+![](PA1_template_files/figure-html/timeseries-1.png)<!-- -->
 
 The interval with the maximum number of steps can be obtained using the following code chunk.
 
@@ -122,7 +122,7 @@ hist(total2$x, xlab = "Total steps taken per day",
       main = "Histogram of steps taken per day", col = "darkseagreen3")
 ```
 
-![](PA1_template_files/figure-html/histogram 2-1.png)<!-- -->
+![](PA1_template_files/figure-html/histogram2-1.png)<!-- -->
 
 ```r
 mean(total2$x)

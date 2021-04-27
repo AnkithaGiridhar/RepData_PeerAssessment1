@@ -34,7 +34,7 @@ median(total1$x)
 
 ### Average Daily Activity Pattern
 The steps were again aggregated but this time using the function mean and the interval column. Each interval occurs once each day. The time series plot was built on this aggregation. 
-```{r time series plot}
+```{r timeseries}
 average<-aggregate(act1$steps, by = list(act1$interval), FUN = mean)
 plot(average$Group.1,average$x, type = 'l', xlab = 'Interval', ylab = 'No. of Steps',
      main = 'Average Steps per Interval', col = 'firebrick4')
@@ -56,7 +56,7 @@ head(act2)
 ```
 The step data was aggregated by date using sum as the function to obtain the total number of steps taken per day. The histogram, mean and median were done on the act2 dataframe this time.
 
-```{r histogram 2}
+```{r histogram2}
 total2<-aggregate(act2$steps, by = list(act2$date), FUN = sum)
 hist(total2$x, xlab = "Total steps taken per day",
       main = "Histogram of steps taken per day", col = "darkseagreen3")
